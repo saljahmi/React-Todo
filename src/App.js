@@ -34,7 +34,7 @@ class App extends React.Component {
       todos: this.state.todos.map((todo) => {
         if(todo.id === clickedTodoID) {
           return {
-            ... todo,
+            ...todo,
             completed: !todo.completed
           };
         } else {
