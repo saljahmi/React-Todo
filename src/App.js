@@ -48,7 +48,7 @@ class App extends React.Component {
 
   addTodo = (task) => {
     const newTodo = {
-      name: task,
+      task: task,
       id: new Date(),
       completed: false
     };
@@ -77,7 +77,7 @@ class App extends React.Component {
             toggleCompleted = {this.toggleCompleted}
           />
           <TodoForm 
-          addTodo = {this.addTodo}
+          addTodo = {this.addTodo} clearTodos={this.clearTodos}
           />
       </div>
     );
